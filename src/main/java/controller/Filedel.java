@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-import board.dao.BoardDAO;
+import dao.BoardDAO;
 
 @WebServlet("/fdel.do")
 public class Filedel extends HttpServlet {

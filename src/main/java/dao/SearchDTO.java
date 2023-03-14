@@ -1,4 +1,4 @@
-package board.dao;
+package dao;
 
 public class SearchDTO {
 

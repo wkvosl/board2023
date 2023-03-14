@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import board.dao.BoardDTO;
-import board.dao.SearchDAO;
+import dao.BoardDTO;
+import dao.SearchDAO;
 
 
 @WebServlet("/list")

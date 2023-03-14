@@ -1,4 +1,4 @@
-package board.dao;
+package dao;
 
 import java.io.File;
 import java.sql.Connection;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import board.DB.DBconnection;
+import DB.DBconnection;
 
 //autocloseable ( try with resource statements )
 

@@ -1,4 +1,4 @@
-package board.dao;
+package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import board.DB.DBconnection;
+import DB.DBconnection;
 
 public class SearchDAO {
 

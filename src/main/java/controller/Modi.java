@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
-import board.dao.BoardDAO;
-import board.dao.BoardDTO;
+import dao.BoardDAO;
+import dao.BoardDTO;
 
 
 @WebServlet("/modi.do")
