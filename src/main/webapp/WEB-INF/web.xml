@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" metadata-complete="false" version="4.0">
+  <display-name>board</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <error-page>
+  	<exception-type>java.lang.NullPointerException</exception-type>
+  	<location>/WEB-INF/error/nullPoint.jsp</location>
+  </error-page>
+  
+   <error-page>
+   	<error-code>500</error-code>
+   	<location>/WEB-INF/error/error500.jsp</location>
+   </error-page>
+
+   <error-page>
+   	<exception-type>java.io.FileNotFoundException</exception-type>
+   	<location>/WEB-INF/error/FileNotFound.jsp</location>
+   </error-page>
+
+<!-- DBCP 지금은 안쓸거야. java에서 어떻게 데리고 오는지 모름. 공부 더 하고 쓰기 -->
+<!-- 	<resource-ref>
+		<description>DBCP</description>
+		<res-ref-name>mysql/DBCP</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref> -->
+	
+
+
+</web-app>
+
+
+
+
+<!-- 
+200 - 요청이 정삭적으로 처리됨
+307 - 임시로 페이지가 리다이렉트됨
+400 - 클라이언트의 요청이 잘못된 구문으로 구성됨
+401 - 접근이 허용되지 않음
+404 - 지정된 URL을 처리하기 위한 자원이 존재하지 않음
+405 - 요청된 메서드는 허용되지 않음
+500 - 서버 내부 에러, JSP에서 Exception이 발생하는 경우를 포함
+503 - 서버가 일시적으로 서비스를 제공할 수 없음. 과부하가 걸리거나 임시보수중일 때 해당됨. 
+-->
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- DB연동정보 -->
+<!-- DBCP 관리 -->
+
+<Context>
+
+<!-- 지금은 안쓸거야. java에서 어떻게 데리고 오는지 모름. 공부 더 하고 쓰기-->
+
+<!-- 	<Resource 
+		name="mysql/DBCP"
+		auth="Container" 
+		type="javax.sql.DataSource"
+		
+		maxTotal="100"
+		maxIdle="30"
+		maxWaitMillis="10000"
+		
+		username="root"
+		password="a123"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://localhost/jspboard?useUnicode=true;characterEncoding=utf8"
+		
+	/> -->
+
+	<!-- 
+	name : 내가 이름 짓기
+	auth : 관리를 누가 하는지? 컨테이너 인증 정보 
+	type : DBCP의 타입은 DataSource!-->
+	
+	<!-- 
+	pool에 대한 설정
+	maxTotal : connection들의 최대 수
+	maxIdle : 살아있는 connection들
+	maxWaitMillis="10000" : connection을 사용하기 위한 최대 시간 -->
+	
+</Context>
