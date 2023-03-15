@@ -45,8 +45,13 @@ window.onload = function(){
 			
 			input_file.addEventListener("change", ()=>{
 				
+//				checkEXT();
+const extOK = ["jpg","jpeg","png","gif","psd","pdd","tif","ai","eps"];
+	const filenameSplit = input_file.value.split('\.');
+	let extEnd = filenameSplit[filenameSplit.length-1];
+
 				checkEXT();
-				
+			
 				const maxsize = 2*1024*1024;
 				let filesize = input_file.files[0].size ? input_file.files[0].size:0;
 				
@@ -70,6 +75,7 @@ window.onload = function(){
 				modal.style.display = "none";
 				input_file.focus();			
 			});
+			
 		}
 }
 
@@ -79,9 +85,15 @@ function checkEXT(){
 	const filenameSplit = input_file.value.split('\.');
 	let extEnd = filenameSplit[filenameSplit.length-1];
 
-			if(extOK.indexOf(extEnd) != -1){
+/*			if(extOK.indexOf(extEnd) != -1){
 			}else if(input_file != ""){
 			}else{
+				alert('지원하지 않은 확장자. 가능한 확장자는 '+extOK+' 입니다.');
+				input_file.value="";
+				input_file.focus();
+			}*/
+			
+						if(extOK.indexOf(extEnd) == -1){
 				alert('지원하지 않은 확장자. 가능한 확장자는 '+extOK+' 입니다.');
 				input_file.value="";
 				input_file.focus();

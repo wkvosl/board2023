@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
  
 <%@ page isErrorPage="true" %>
-<%@ include file="../bootstrapTaglib.jsp"%>
+<%@ include file="WEB-INF/bootstrapTaglib.jsp"%>
  
 <!DOCTYPE html>
 <html>
@@ -13,8 +13,9 @@
 </head>
 <body>
 
-파일이 없습니다.
-<button class="btn btn-primary" onclick="location.href='list'">목록으로</button>
-
+<div style="text-align: center;">
+	파일이 없습니다.
+	<button class="btn btn-primary" onclick="location.href='list'">목록으로</button>
+</div>
 </body>
 </html>

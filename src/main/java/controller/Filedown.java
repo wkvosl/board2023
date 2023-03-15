@@ -44,7 +44,7 @@ public class Filedown extends HttpServlet {
 		boolean isExists = filedown.exists();
 		
 		if(!isExists) {
-			request.getRequestDispatcher("/error/FileNotFound.jsp");
+			response.sendRedirect("/FileNotFound.jsp");
 		}else {
 		
 		response.setContentType("application/octet-stream");
